@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cake</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-white shadow-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Img/Logo.png" alt="Bootstrap" width="75" height="75" />
+          <span class="fw-bold text-danger fs-4">The Cake</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="menu-banner">
+      <div class="menu-content">
+        <h1>Delicious</h1>
+        <h2>Contact</h2>
+      </div>
+    </div>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.4499456181793!2d103.20132284159047!3d13.09654273121974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3105498e0294a17b%3A0x8a3db31467a2dfb7!2sDewey%20International%20University!5e0!3m2!1sen!2skh!4v1760429828959!5m2!1sen!2skh"
+        width="1000px"
+        height="400px"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <div class="Contact" id="contact">
+      <div class="container mt-5">
+        <div class="contact-header">
+          <h4>Order Here</h4>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <form>
+              <div class="row">
+                <div class="col-md-6 mb-3 input">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="text"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="phonenumber"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    placeholder="Enter subject"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <select
+                    id="paymentMethod"
+                    name="payment"
+                    class="form-select"
+                    required
+                  >
+                    <option value="" disabled selected>
+                      Select your payment method
+                    </option>
+                    <option value="aba">KHQR</option>
+                    <option value="cod">Cash on Delivery</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Upload Payment Screenshot</label>
+                <input
+                  type="file"
+                  name="payment_screenshot"
+                  class="form-control"
+                  accept="image/*"
+                />
+                <small class="text-muted"
+                  >Please upload your payment screenshot if already paid.</small
+                >
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="location"
+                  placeholder="Location"
+                />
+              </div>
+
+              <div class="mb-3">
+                <textarea
+                  type="text"
+                  class="form-control"
+                  id="massage"
+                  rows="5"
+                  placeholder="Enter massage"
+                ></textarea>
+              </div>
+
+              <div class="submit">
+                <button
+                  type="button"
+                  class="btn btn-outline-success btn-lg w-100"
+                >
+                  Submit Order
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-3">
+            <div class="qr-code">
+              <p>Scan to Pay</p>
+              <img src="Img/qrcode.jpg" alt="Bank QR Code" />
+            </div>
+            <div class="text-qr">
+              <p>សូមអគុណសម្រាប់ការគាំទ្រ🙏</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="cakeCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner slide-footer">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+            <img
+              src="https://preview.colorlib.com/theme/cakes/assets/img/gallery/items8.png.webp"
+              class="img-fluid"
+              style="width: 350px; height: 200px; object-fit: cover"
+            />
+            <img
+              src="https://preview.colorlib.com/theme/cakes/assets/img/gallery/items7.png.webp"
+              class="img-fluid"
+              style="width: 350px; height: 200px; object-fit: cover"
+            />
+            <img
+              src="https://preview.colorlib.com/theme/cakes/assets/img/gallery/items9.png.webp"
+              class="img-fluid"
+              style="width: 350px; height: 200px; object-fit: cover"
+            />
+            <img
+              src="https://preview.colorlib.com/theme/cakes/assets/img/gallery/items8.png.webp"
+              class="img-fluid"
+              style="width: 350px; height: 200px; object-fit: cover"
+            />
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+            <img
+              src="https://preview.colorlib.com/theme/cakes/assets/img/gallery/items5.png.webp"
+              class="img-fluid"
+              style="width: 350px; height: 200px; object-fit: cover"
+            />
+            <img
+              src="https://preview.colorlib.com/theme/cakes/assets/img/gallery/items4.png.webp"
+              class="img-fluid"
+              style="width: 350px; height: 200px; object-fit: cover"
+            />
+            <img
+              src="https://preview.colorlib.com/theme/cakes/assets/img/gallery/items1.png.webp"
+              class="img-fluid"
+              style="width: 350px; height: 200px; object-fit: cover"
+            />
+            <img
+              src="https://preview.colorlib.com/theme/cakes/assets/img/gallery/items8.png.webp"
+              class="img-fluid"
+              style="width: 350px; height: 200px; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="Img/Logo.png" alt="Cake Logo" width="80" class="me-2" />
+              <h3 class="footer-logo mb-0">The Cake</h3>
+            </div>
+            <p class="footer-text">
+              Land behold it created good saw after she'd Our set living. Signs
+              midst dominion creepeth morning laboris nisi ufsit aliquip.
+            </p>
+            <div class="social-icons mt-3">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-2 mb-4">
+            <h5 class="footer-title">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <h5 class="footer-title">Cakes</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Blackforest</a></li>
+              <li><a href="#">Blueberry Cake</a></li>
+              <li><a href="#">Fruit Cake</a></li>
+              <li><a href="#">Strawberry Cake</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-3 mb-4">
+            <h5 class="footer-title">Contact Us</h5>
+            <p>Battambang Province</p>
+            <p class="footer-phone">+855 973857963</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>Copyright ©2025 All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
